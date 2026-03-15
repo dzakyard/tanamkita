@@ -1,0 +1,17 @@
+{
+  "name": "tanamkita",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "@types/bun": "latest",
+    "tailwindcss": "^4.2.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
