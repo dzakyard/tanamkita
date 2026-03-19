@@ -3,6 +3,10 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "dev": "bunx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch & lite-server",
+    "build": "bunx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --minify"
+  },
   "devDependencies": {
     "@tailwindcss/cli": "^4.2.1",
     "@types/bun": "latest",
