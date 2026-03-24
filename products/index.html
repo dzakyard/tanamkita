@@ -9,7 +9,7 @@
 </head>
 <body class="font-mono">
   <header class="flex p-4 px-10 justify-center">
-    <nav class="fixed p-4 px-8 bg-green-900 text-white basis-2/3 justify-center fixed rounded-4xl">
+    <nav class="fixed p-4 px-8 bg-green-900 text-white basis-2/3 justify-center fixed rounded-4xl z-99">
       <ul class="flex gap-6">
         <li><a href="/">Home</a></li>
         <li><a href="/products/">Products</a></li>
@@ -20,34 +20,58 @@
   </header>
 
   <main>
-   <!-- Section 3: Principles -->
-   <section id="principles" class="bg-green-900 text-white p-10">
-    <div class="text-center p-4 pb-20">
-      <h2 class="text-4xl font-bold py-4">Kenapa Memilih TanamKita?</h2>
-      <p>Prinsip yang selalu kami pegang teguh</p>
+   <!-- Section 1: Products-->
+   <section id="products" class="bg-green-50 text-green-900 p-10">
+    <div class="text-center p-4 pb-12">
+      <h2 class="text-4xl font-bold py-4 text-green-900">Katalog Produk Kami</h2>
+      <p class="text-gray-600">Temukan berbagai pilihan tanaman hias terbaik untuk mencerahkan hari Anda.</p>
     </div>
-   <div id="princip">
-      <ul class="flex gap-8">
-        <li class="bg-white text-black p-8 rounded-2xl">
-          <div id="icon-1">
-            <img src="/assets/plant-fill.webp" class="bg-green-100 p-4 mb-4 rounded-full" alt="plant-fill">
+    <div id="product" class="max-w-6xl mx-auto">
+      <ul class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Product Card 1 -->
+        <li class="bg-white text-black p-5 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col h-full transform hover:-translate-y-1">
+          <div class="relative overflow-hidden rounded-xl mb-4 h-64">
+            <img src="/assets/indoor_monstera_1774362276431.webp" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="Indoor Monstera">
+            <span class="absolute top-3 right-3 bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full">Terlaris</span>
           </div>
-          <h3 class="font-bold text-xl">100% Tanaman Sehat</h3>
-          <p class="text-sm">Setiap tanaman melalui proses karantina dan pengecekan kesehatan ketat sebelum dikirim ke rumah Anda.</p>
+          <h3 class="font-bold text-2xl text-center mb-2">Indoor Monstera</h3>
+          <p class="text-center text-gray-600 mb-4 flex-grow text-sm">Tanaman cantik berdaun unik, sangat cocok untuk mempermanis sudut ruangan indoor Anda. Perawatan sangat mudah.</p>
+          <p class="text-center text-green-800 font-bold text-xl mb-6">Rp 150.000</p>
+          
+          <div class="flex flex-col gap-3 mt-auto">
+            <a class="block text-center font-bold py-3 bg-green-800 hover:bg-green-700 transition-colors duration-300 text-white rounded-xl w-full" href="#">Beli Sekarang</a>
+            <a class="block text-center font-bold py-3 bg-green-50 text-green-800 border-2 border-green-800 hover:bg-green-100 transition-colors duration-300 rounded-xl w-full" href="#">Masukkan Keranjang</a>
+          </div>
         </li>
-        <li class="bg-white text-black p-8 rounded-2xl">
-          <div id="icon-2">
-            <img src="/assets/package-fill.webp" class="bg-green-100 p-4 mb-4 rounded-full" alt="package-fill">
+        
+        <!-- Product Card 2 -->
+        <li class="bg-white text-black p-5 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col h-full transform hover:-translate-y-1">
+          <div class="relative overflow-hidden rounded-xl mb-4 h-64 bg-gray-100 flex items-center justify-center">
+            <img src="/assets/snake_plant.webp" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="Indoor Monstera">
           </div>
-          <h3 class="font-bold text-xl">Garansi Pengiriman</h3>
-          <p class="text-sm">Tanaman rusak saat sampai? Kami ganti baru tanpa biaya tambahan. Packaging kami didesain anti-guncangan.</p>
+          <h3 class="font-bold text-2xl text-center mb-2">Snake Plant</h3>
+          <p class="text-center text-gray-600 mb-4 flex-grow text-sm">Pembersih udara alami. Tahan banting dan bisa bertahan dengan cahaya minim.</p>
+          <p class="text-center text-green-800 font-bold text-xl mb-6">Rp 75.000</p>
+          
+          <div class="flex flex-col gap-3 mt-auto">
+            <a class="block text-center font-bold py-3 bg-green-800 hover:bg-green-700 transition-colors duration-300 text-white rounded-xl w-full" href="#">Beli Sekarang</a>
+            <a class="block text-center font-bold py-3 bg-green-50 text-green-800 border-2 border-green-800 hover:bg-green-100 transition-colors duration-300 rounded-xl w-full" href="#">Masukkan Keranjang</a>
+          </div>
         </li>
-        <li class="bg-white text-black p-8 rounded-2xl">
-          <div id="icon-3">
-            <img src="/assets/chats-fill.webp" class="bg-green-100 p-4 mb-4 rounded-full" alt="chats-fill">
+
+        <!-- Product Card 3 -->
+        <li class="bg-white text-black p-5 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col h-full transform hover:-translate-y-1">
+          <div class="relative overflow-hidden rounded-xl mb-4 h-64 bg-gray-100 flex items-center justify-center">
+            <img src="/assets/pachira_aquatica.webp" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="Indoor Monstera">
           </div>
-          <h3 class="font-bold text-xl">Konsultasi Gratis</h3>
-          <p class="text-sm">Bingung cara merawatnya? Tim kami siap menjawab pertanyaan Anda kapan saja melalui WhatsApp.</p>
+          <h3 class="font-bold text-2xl text-center mb-2">Pachira Aquatica</h3>
+          <p class="text-center text-gray-600 mb-4 flex-grow text-sm">Pohon uang mini (Money Tree) yang dipercaya membawa keberuntungan dan rezeki.</p>
+          <p class="text-center text-green-800 font-bold text-xl mb-6">Rp 120.000</p>
+          
+          <div class="flex flex-col gap-3 mt-auto">
+            <a class="block text-center font-bold py-3 bg-green-800 hover:bg-green-700 transition-colors duration-300 text-white rounded-xl w-full" href="#">Beli Sekarang</a>
+            <a class="block text-center font-bold py-3 bg-green-50 text-green-800 border-2 border-green-800 hover:bg-green-100 transition-colors duration-300 rounded-xl w-full" href="#">Masukkan Keranjang</a>
+          </div>
         </li>
       </ul>
     </div>
